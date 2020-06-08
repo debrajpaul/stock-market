@@ -7,8 +7,8 @@
         "type": "git",
         "url": "git+https://github.com/debrajpaul/stock-market.git"
     },
-    "author": "",
-    "license": "ISC",
+    "author": "pauldebraj7@gmail.com",
+    "license": "Apache-License",
     "bugs": {
         "url": "https://github.com/debrajpaul/stock-market/issues"
     },
