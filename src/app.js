@@ -6,6 +6,9 @@ const { log } = require("./utils/logger");
 const { swaggerSpec } = require("./swagger-docs");
 const swaggerUi = require("swagger-ui-express");
 const { stockRouter } = require("./routes/stock-routes");
+// testing framework for cron job in cluster
+const CronCluster = require("./services/cron-Cluster");
+const CronJob = require("./services/cron-Job");
 
 dotenv.config();
 const app = express();
@@ -49,6 +52,9 @@ switch (PROTOCOL) {
                 `HTTP listening on port ${PORT}`
             );
         });
+        // init
+        // CronCluster.newInstance().scheduleCronCronClusterJobs();
+        // CronJob.newInstance().scheduleCronJobs();
         break;
     }
     default: {
